@@ -1,0 +1,51 @@
+Source: kwalletmanager
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Sune Vuorela <sune@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libkf5archive-dev (>= 5.83.0~),
+               libkf5auth-dev (>= 5.83.0~),
+               libkf5config-dev (>= 5.83.0~),
+               libkf5configwidgets-dev (>= 5.83.0~),
+               libkf5coreaddons-dev (>= 5.83.0~),
+               libkf5crash-dev (>= 5.83.0~),
+               libkf5dbusaddons-dev (>= 5.83.0~),
+               libkf5doctools-dev (>= 5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5iconthemes-dev (>= 5.72.0~),
+               libkf5jobwidgets-dev (>= 5.83.0~),
+               libkf5kcmutils-dev (>= 5.83.0~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5notifications-dev (>= 5.83.0~),
+               libkf5service-dev (>= 5.83.0~),
+               libkf5textwidgets-dev (>= 5.83.0~),
+               libkf5wallet-dev (>= 5.83.0~),
+               libkf5windowsystem-dev (>= 5.83.0~),
+               libkf5xmlgui-dev (>= 5.83.0~),
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15.0~),
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://invent.kde.org/utilities/kwalletmanager
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kwalletmanager
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kwalletmanager.git
+
+Package: kwalletmanager
+Architecture: any
+Section: utils
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: secure password wallet manager
+ The KDE Wallet system provides a secure way to store passwords and other
+ secret information, allowing the user to remember only a single KDE Wallet
+ password instead of numerous different passwords and credentials.
+ .
+ KWallet Manager is a utility for viewing and editing information stored in
+ the KDE Wallet.
+ .
+ This package is part of the KDE SC utilities module.
